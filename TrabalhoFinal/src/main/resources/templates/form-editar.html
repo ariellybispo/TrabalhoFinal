@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar publicação</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Blog</h1>
+
+    <div class="form-box">
+        <h2>Alterar publicação - ID <span th:text="${publicacao.id}"></span></h2>
+
+        <form action="/atualizar" method="post">
+
+            <input type="hidden" name="id" th:value="${publicacao.id}">
+
+            <label>Título</label>
+            <input type="text" name="titulo" th:value="${publicacao.titulo}" required>
+
+            <label>Autor</label>
+            <input type="text" name="autor" th:value="${publicacao.autor}" required>
+
+            <label>Data de publicação</label>
+            <input type="date" name="dataPublicacao" th:value="${publicacao.dataPublicacao}" required>
+
+            <label>Texto</label>
+            <textarea name="texto" required th:text="${publicacao.texto}"></textarea>
+
+            <button type="submit" class="salvar">Salvar</button>
+        </form>
+
+    </div>
+
+    <footer>Arielly Bispo / Eduardo Sampaio / TADS - A / 2025</footer>
+</div>
+
+</body>
+</html>

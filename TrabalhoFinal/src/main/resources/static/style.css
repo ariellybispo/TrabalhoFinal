@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 2px solid #aaa;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #b7b7b7;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.alterar {
+      background: #6aa6d6;
+    color: white;
+}
+
+.excluir {
+    background: #e74555;
+    color: white;
+}
+
+.novo {
+    background: #6aa6d6;
+    color: white;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.badge {
+    background: #df7f39;
+    padding: 5px 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+      background: #6aa6d6;
+    color: white;
+    padding: 10px;
+}
+
+.form-box {
+    border: 1px solid #ccd;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.salvar {
+    background: #6aa6d6;
+    color: white;
+}
+
+.erro {
+    color: red;
+}

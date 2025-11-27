@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Incluir nova publicação</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Blog</h1>
+
+    <div class="form-box">
+        <h2>Incluir nova publicação</h2>
+
+        <form action="/salvar" method="post">
+
+            <label>Título</label>
+            <input type="text" name="titulo" required>
+
+            <label>Autor</label>
+            <input type="text" name="autor" required>
+
+            <label>Data de publicação</label>
+            <input type="date" name="dataPublicacao" required>
+
+            <label>Texto</label>
+            <textarea name="texto" minlength="10" required></textarea>
+
+            <button type="submit" class="salvar">Salvar</button>
+        </form>
+
+        <p class="erro" th:if="${erro}" th:text="${erro}"></p>
+
+    </div>
+
+   <footer>Arielly Bispo / Eduardo Sampaio / TADS - A / 2025</footer>
+</div>
+
+</body>
+</html>
